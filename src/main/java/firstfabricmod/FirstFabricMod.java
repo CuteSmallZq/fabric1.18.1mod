@@ -4,11 +4,20 @@ import firstfabricmod.block.oreBlock.AmethystBlock;
 import firstfabricmod.block.oreBlock.AmethystOre;
 import firstfabricmod.item.ore.OreItem;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class ExampleMod implements ModInitializer {
+public class FirstFabricMod implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger("firstfabricmod");
+
+	public static final ItemGroup LOSTsMOD = FabricItemGroupBuilder.build(
+			new Identifier("firstfabricmod","general"),
+			() -> new ItemStack(Blocks.COBBLESTONE));
 
 	@Override
 	public void onInitialize() {
