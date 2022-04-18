@@ -1,4 +1,6 @@
 {
   "item.firstfabricmod.amethyst": "Amethyst",
-  "block.firstfabricmod.amethyst_block": "Block of Amethyst"
+  "block.firstfabricmod.amethyst_block": "Block of Amethyst",
+  "block.firstfabricmod.amethyst_ore": "Amethyst Ore",
+  "block.firstfabricmod.deepslate_amethyst_ore": "Deepslate Amethyst Ore"
 }

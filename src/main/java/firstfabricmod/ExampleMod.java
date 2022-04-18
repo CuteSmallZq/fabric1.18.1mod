@@ -1,6 +1,7 @@
 package firstfabricmod;
 
-import firstfabricmod.block.AmethystBlock;
+import firstfabricmod.block.oreBlock.AmethystBlock;
+import firstfabricmod.block.oreBlock.AmethystOre;
 import firstfabricmod.item.ore.OreItem;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -12,10 +13,9 @@ public class ExampleMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-		// 紫水晶，Amethyst
-		OreItem.c_r_Amethyst();
-		// 紫水晶块，Amethyst_Block
-		AmethystBlock.c_r_Amethyst_Block();
+		OreItem.c_r_Amethyst(); // 紫水晶，AMETHYST
+		AmethystBlock.c_r_Amethyst_Block(); // 紫水晶块，AMETHYST_BLOCK
+		AmethystOre.c_r_AmethystOre(); // 紫水晶矿石与深层版本，AMETHYST_ORE，DEEPSLATE_AMETHYST_ORE
 
 		LOGGER.info("Hello Fabric world!");
 	}
