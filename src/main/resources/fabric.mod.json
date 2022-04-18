@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "firstfabricmod.FirstFabricMod"
+    ],
+    "client": [
+      "firstfabricmod.FirstFabricModClient"
     ]
   },
   "mixins": [
