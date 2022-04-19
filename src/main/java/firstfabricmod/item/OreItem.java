@@ -1,4 +1,4 @@
-package firstfabricmod.item.ore;
+package firstfabricmod.item;
 
 import firstfabricmod.FirstFabricMod;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
