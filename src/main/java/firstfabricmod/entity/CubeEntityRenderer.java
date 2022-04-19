@@ -13,6 +13,6 @@ public class CubeEntityRenderer extends MobEntityRenderer<CubeEntity, CubeEntity
 
     @Override
     public Identifier getTexture(CubeEntity entity) {
-        return new Identifier("firstfabricmod","textures/entity/cube/cube.png");
+        return new Identifier("firstfabricmod","textures/entity/cube.png");
     }
 }
