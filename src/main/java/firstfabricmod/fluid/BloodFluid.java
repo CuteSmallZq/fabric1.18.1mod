@@ -32,7 +32,7 @@ public abstract class BloodFluid extends FlowableFluid {
 
     public BloodFluid() {}
 
-    public static void c_r_BloodFluid(){
+    public static void r_BloodFluid(){
         STILL_BLOOD = Registry.register(Registry.FLUID, new Identifier("firstfabricmod","blood"), new BloodFluid.Still());
         FLOWING_BLOOD = Registry.register(Registry.FLUID, new Identifier("firstfabricmod","flowing_blood"), new BloodFluid.Flowing());
         BLOOD_BUCKET = Registry.register(Registry.ITEM, new Identifier("firstfabricmod","blood_bucket"),

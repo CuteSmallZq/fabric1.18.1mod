@@ -17,7 +17,7 @@ public class AmethystOre extends Block {
         super(settings);
     }
 
-    public static void c_r_AmethystOre(){
+    public static void r_AmethystOre(){
         Registry.register(Registry.BLOCK, new Identifier("firstfabricmod","amethyst_ore"), AMETHYST_ORE);
         Registry.register(Registry.ITEM, new Identifier("firstfabricmod","amethyst_ore"),
                 new BlockItem(AMETHYST_ORE, new Item.Settings().group(FirstFabricMod.LOSTsMOD)));

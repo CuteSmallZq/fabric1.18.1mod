@@ -14,7 +14,7 @@ public class OreItem extends Item {
 
     public static final OreItem Amethyst = new OreItem(new FabricItemSettings().group(FirstFabricMod.LOSTsMOD).maxCount(64));
 
-    public static void c_r_Amethyst(){
+    public static void r_Amethyst(){
         Registry.register(Registry.ITEM, new Identifier("firstfabricmod","amethyst"), Amethyst);
     }
 }
