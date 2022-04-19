@@ -17,7 +17,7 @@ public class AmethystBlock extends Block {
 
     public static final AmethystBlock AMETHYST_BLOCK = new AmethystBlock(FabricBlockSettings.of(Material.METAL).hardness(4.0F));
 
-    public static void r_Amethyst_Block(){
+    public static void r_AmethystBlock(){
         Registry.register(Registry.BLOCK, new Identifier("firstfabricmod","amethyst_block"), AMETHYST_BLOCK);
         Registry.register(Registry.ITEM, new Identifier("firstfabricmod","amethyst_block"),
                 new BlockItem(AMETHYST_BLOCK, new Item.Settings().group(FirstFabricMod.LOSTsMOD)));
