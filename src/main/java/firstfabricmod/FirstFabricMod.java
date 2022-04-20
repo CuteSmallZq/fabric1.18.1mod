@@ -2,6 +2,7 @@ package firstfabricmod;
 
 import firstfabricmod.block.oreBlock.AmethystBlock;
 import firstfabricmod.block.oreBlock.AmethystOre;
+import firstfabricmod.combat.armor.AmethystArmorMaterial;
 import firstfabricmod.entity.CubeEntity;
 import firstfabricmod.entity.CubeEntityEgg;
 import firstfabricmod.fluid.BloodFluid;
@@ -9,7 +10,6 @@ import firstfabricmod.item.OreItem;
 import firstfabricmod.tool.AmethystMaterial.AmethystMaterial;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
@@ -21,7 +21,7 @@ public class FirstFabricMod implements ModInitializer {
 
 	public static final ItemGroup LOSTsMOD = FabricItemGroupBuilder.build(
 			new Identifier("firstfabricmod","general"),
-			() -> new ItemStack(Blocks.COBBLESTONE));
+			() -> new ItemStack(OreItem.Amethyst));
 
 	@Override
 	public void onInitialize() {
@@ -33,6 +33,7 @@ public class FirstFabricMod implements ModInitializer {
 		CubeEntity.r_CubeEntity(); // 方块实体,CUBE
 		CubeEntityEgg.r_CubeEntityEgg(); // 实体方块刷怪蛋,CUBE
 		AmethystMaterial.r_AmethystTool(); // 紫水晶工具,AMETHYST
+		AmethystArmorMaterial.r_AmethystArmor(); // 紫水晶盔甲,AMETHYST
 
 		LOGGER.info("Hello Fabric world!");
 	}
