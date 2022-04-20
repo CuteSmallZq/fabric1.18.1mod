@@ -6,6 +6,7 @@ import firstfabricmod.entity.CubeEntity;
 import firstfabricmod.entity.CubeEntityEgg;
 import firstfabricmod.fluid.BloodFluid;
 import firstfabricmod.item.OreItem;
+import firstfabricmod.tool.AmethystMaterial.AmethystMaterial;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.block.Blocks;
@@ -31,6 +32,7 @@ public class FirstFabricMod implements ModInitializer {
 		BloodFluid.r_BloodFluid(); // 血流体,BLOOD
 		CubeEntity.r_CubeEntity(); // 方块实体,CUBE
 		CubeEntityEgg.r_CubeEntityEgg(); // 实体方块刷怪蛋,CUBE
+		AmethystMaterial.r_AmethystTool(); // 紫水晶工具,AMETHYST
 
 		LOGGER.info("Hello Fabric world!");
 	}
