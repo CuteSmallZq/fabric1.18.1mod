@@ -1,6 +1,7 @@
 package firstfabricmod.tool.AmethystMaterial;
 
 import firstfabricmod.FirstFabricMod;
+import firstfabricmod.item.OreItem;
 import net.minecraft.item.*;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Identifier;
@@ -55,6 +56,6 @@ public class AmethystMaterial implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return null;
+        return Ingredient.ofItems(OreItem.Amethyst);
     }
 }
